@@ -1,0 +1,17 @@
+.info:hover span.cta {
+  opacity: 1;
+}
+
+.info p {
+  position: relative;
+}
+
+span.cta {
+  position: absolute;
+  top: 70px;
+  left: 30px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: green;
+  background: white;
+}

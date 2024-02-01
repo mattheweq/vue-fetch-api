@@ -8,12 +8,19 @@
 
  <div v-for="album in apiData" :key="album.id">
   <a :href="album.spotifyUrl" target="_blank">
+
     <div class="p-2 mb-0 flex flex-col">
       <p class="bg-yellow-300 w-fit font-bold">{{ album.title }}</p>
       <p class="bg-yellow-300 w-fit text-center text-sm ml-auto sm:ml-0">{{ album.year }}</p>
     </div>
+    
+    <div class="info cursor-pointer">
+      <p>
+        <span class="cta">Listen on Spotify</span>
+      </p>
+      <img class="p-2 pt-0 w-48" :src="album.artwork" :alt="album.title">
+    </div>
 
-    <img class="p-2 pt-0 w-48" :src="album.artwork" :alt="album.title">
   </a>
 </div>
 
