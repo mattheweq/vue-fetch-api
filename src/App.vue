@@ -1,12 +1,13 @@
 <template>
 
 <div class="mx-auto flex flex-col items-center sm:max-w-[1200px] sm:grid sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-<div class="flex flex-col justify-center ml-5 mt-4">
+
+<div class="fade-in-slow flex flex-col justify-center">
   <p class="text-7xl">/|\v/|\</p>
   <p>Discography</p>
 </div>
 
- <div v-for="album in apiData" :key="album.id">
+ <div class="fade-in" v-for="album in apiData" :key="album.id">
   <a :href="album.spotifyUrl" target="_blank">
 
     <div class="p-2 mb-0 flex flex-col">

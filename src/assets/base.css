@@ -1,3 +1,9 @@
+html{
+  overflow-y: scroll;
+}
+body{
+  background: #f7f7f7;
+}
 .info:hover span.cta {
   opacity: 1;
 }
@@ -10,8 +16,29 @@ span.cta {
   position: absolute;
   top: 70px;
   left: 30px;
+  padding: 4px;
   opacity: 0;
   transition: opacity 0.3s ease;
-  color: green;
-  background: white;
+  color: white;
+  background: green;
+}
+
+
+
+.fade-in-slow{
+  height: 250px;
+  margin-left: 20px;
+  opacity: 0;
+  transition: all 0.3s ease;
+  animation: fade 1s ease-in forwards;
+}
+
+.fade-in{
+  opacity: 0;
+  animation: fade 1s ease-in forwards;
+}
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
 }
