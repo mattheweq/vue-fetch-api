@@ -1,6 +1,6 @@
 ## /|\v/|\ Discography
 
-[LIVE SITE](https://mattheweq.com/vue-fetch-api)
+[LIVE SITE](https://vue.olk1.com)
 
 ![ALT:preview](preview.png)
 
@@ -34,3 +34,5 @@ npx create-vue@latest .
 ```sh
 npm run build
 ```
+
+## deploy dist folder to static server
